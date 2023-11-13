@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:The_Equation"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Quadratic eqation" Height="200" Width="250">
     <Grid>
-        
+        <GroupBox Header="Inset data" Grid.Row="0" Width="100" Margin="10,10,140,10"  >
+            <StackPanel >
+                <TextBlock>a</TextBlock>
+                <TextBox x:Name="tb_a" />
+                <TextBlock>b</TextBlock>
+                <TextBox x:Name="tb_b" />
+                <TextBlock>c</TextBlock>
+                <TextBox x:Name="tb_c" />
+                <Button Margin="0,20" Click="Button_Click">Calculate</Button>
+            </StackPanel>
+        </GroupBox>
+
+
     </Grid>
 </Window>
